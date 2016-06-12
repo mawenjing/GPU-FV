@@ -2,14 +2,15 @@
 -- a CUDA compatible GPU.
 -- OpenCV installed.
 
-2. Compile libpca and armadillo properly.
+2. Unzip armadillo. Then compile libpca and armadillo in local directories properly.
 
 3. To compile GPU-FV code, first edit the following lines in Makefile according to  your own configuration.
+Usually you do not have to modify ARMADILLO_ROOT and PCA_ROOT, since they are included in the package.
 
 CUDA_ROOT = /usr/local/cuda
-OPENCV_ROOT = /home/wenjing/opencv-2.4.9
-ARMADILLO_ROOT = /home/wenjing/armadillo-4.650.2
-PCA_ROOT = /home/wenjing/libpca-1.2.11
+OPENCV_ROOT = ../opencv-2.4.9
+ARMADILLO_ROOT = ./armadillo-4.650.2
+PCA_ROOT = ./libpca-1.2.11
 
 Then, just type 
 $make
