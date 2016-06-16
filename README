@@ -1,3 +1,6 @@
+# GPU-FV: Realtime Fisher Vector using GPUs
+
+## Install 
 1. Prerequesites:
 -- a CUDA compatible GPU.
 -- OpenCV installed.
@@ -39,5 +42,12 @@ $./gpu_fv 1 $your_path_to_caltech256_dataset
 5. If you want to save the Fisher vectors of the images, you can define SAVE_CODE in main.cpp or in the Makefile.
 Then make a directory called "C_output", the vectors will be saved there.
 
+
 Fisher vectors of images in the training set have name R*, where * is the index in the training set.
 Those in the testing set are named as E*, where * is the index in the testing set.
+
+## References
+
+GPU-FV: Realtime Fisher Vector and Its Applications in Video Monitoring   
+Wenying Ma, Liangliang Cao, Lei Yu, Guoping Long, Yucheng Li  
+ICMR 2016. [(arXiv)](http://arxiv.org/abs/1604.03498)
